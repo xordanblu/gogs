@@ -190,9 +190,7 @@
 /* Mark the parent count on the active commit page when two adjacent parent
    links prove the commit is a merge. A one-parent commit keeps its current
    appearance. */
-html[data-fullwidth="commit-diff"]
-  .font-mono.text-xs
-  > span:has(+ a[href*="/commit/"] + a[href*="/commit/"]) {
+html[data-fullwidth="commit-diff"] .font-mono.text-xs > span:has(+ a[href*="/commit/"] + a[href*="/commit/"]) {
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--color-border);
